@@ -1,0 +1,635 @@
+// fonts
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Tamma+2:600, 700");
+
+// css reset
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
+}
+
+q {
+  &:before,
+  &:after {
+    content: "";
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+// css reset end
+
+html {
+  height: 100%;
+  background-color: #ffd370;
+}
+
+body {
+  font-family: "Baloo Thambi 2", cursive;
+}
+
+.frontPage-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-left {
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    text-transform: uppercase;
+    margin-left: 4%;
+    font-size: 40px;
+  }
+}
+
+.todo-icon {
+  position: relative;
+}
+
+.checkbox-icon {
+  position: absolute;
+}
+
+.check-icon {
+  position: relative;
+  top: 2px;
+  left: 6px;
+}
+
+.cover img {
+  height: 60vh;
+  margin-top: 5%;
+}
+
+/* Login section */
+.section-login {
+  margin-top: 6%;
+  margin-right: 5%;
+
+  h2 {
+    font-size: 32px;
+    margin-top: 25%;
+  }
+}
+
+.login-email {
+  span {
+    display: block;
+    font-size: 25px;
+    margin-top: 5%;
+  }
+
+  input {
+    width: 100%;
+    height: 7vh;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+
+    &[type="text"] {
+      padding-left: 3%;
+    }
+  }
+}
+
+.login-pwd {
+  margin-top: 10%;
+
+  span {
+    display: block;
+    font-size: 25px;
+  }
+
+  input {
+    width: 100%;
+    height: 7vh;
+    border: none;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 18px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+
+    &[type="password"] {
+      padding-left: 3%;
+    }
+  }
+}
+
+.login-signup-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+
+  button {
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 10vw;
+    padding: 2%;
+  }
+}
+
+.login-btn {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.signup-btn {
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 5%;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+/* Login-section end */
+
+/* Signup section */
+.section-signup {
+  margin-top: 8%;
+  margin-right: 5%;
+  width: 26.5vw;
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+.signup-info {
+  span {
+    display: block;
+    font-size: 18px;
+    margin-top: 5%;
+  }
+
+  input {
+    width: 100%;
+    height: 7vh;
+    margin-top: 2%;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+
+    &::placeholder {
+      font-size: 18px;
+    }
+
+    &[type="text"],
+    &[type="password"] {
+      padding-left: 3%;
+    }
+  }
+}
+
+.signup-signup-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+
+  button {
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    // width: 10vw;
+    padding: 2%;
+  }
+}
+
+.signup-signup-btn {
+  width: 10vw;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+.signup-backToLogin-btn {
+  cursor: pointer;
+  background-color: transparent;
+  margin-top: 5%;
+
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
+/* Signup section end */
+
+/* to do list section */
+.todolist-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todolist-header-left {
+  width: 30vw;
+  display: flex;
+  margin-left: 2%;
+  margin-top: 2%;
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 4%;
+    margin-top: 1%;
+  }
+}
+
+.todolist-icon {
+  position: relative;
+}
+
+.todolist-checkbox-icon {
+  position: absolute;
+  height: 6vh;
+}
+
+.todolist-check-icon {
+  position: relative;
+  height: 5vh;
+  left: 7px;
+}
+
+.todolist-header-right {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1%;
+  margin-right: 1%;
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  button {
+    font-size: 20px;
+    border: none;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: white;
+    }
+  }
+}
+// to do list container start
+$default: #ffd370;
+$dark: #333;
+$gray: #9f9a91;
+$light: #efefef;
+
+.container {
+  margin: 3rem auto 1.5rem auto;
+  padding: 0 12px;
+  width: 500px;
+  @media (max-width: 575px) {
+    margin-top: 1.5rem;
+  }
+}
+.card {
+  margin-bottom: 0.5rem;
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+.card input[type="text"] {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  padding-right: 1rem;
+  color: $dark;
+  &::placeholder {
+    color: $gray;
+  }
+}
+.input {
+  padding: 4px 4px 4px 1rem;
+  display: flex;
+}
+.btn_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: $default;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+// card_list
+.card_list {
+  padding: 0;
+}
+
+.tab {
+  display: flex;
+  text-align: center;
+  color: $gray;
+  font-size: 14px;
+  li {
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 2px solid $light;
+    &.active {
+      border-bottom: 2px solid $dark;
+      color: $dark;
+      font-weight: bold;
+    }
+  }
+}
+.cart_content {
+  padding: 0.5rem 1rem 1rem 1rem;
+  @media (max-width: 575px) {
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+  }
+}
+.list {
+  li {
+    position: relative;
+    padding-right: 2rem;
+    @media (max-width: 575px) {
+      padding-right: 0;
+    }
+    a.delete {
+      position: absolute;
+      opacity: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      text-decoration: none;
+      color: $dark;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background: #000;
+      background-image: url("https://i.imgur.com/7Q4RjFx.jpg");
+      background-size: contain;
+      @media (max-width: 575px) {
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+      }
+    }
+    &:hover a.delete {
+      opacity: 1;
+    }
+  }
+}
+
+.list_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem 1rem 0.5rem;
+  font-size: 14px;
+  a {
+    color: $gray;
+    text-decoration: none;
+  }
+  @media (max-width: 575px) {
+    padding: 1.5rem 0 1rem 0.5rem;
+  }
+}
+
+.checkbox {
+  position: relative;
+  user-select: none;
+  width: 100%;
+  display: block;
+  padding-left: 44px;
+  cursor: pointer;
+  span {
+    display: block;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    line-height: 1.5;
+    @media (max-width: 575px) {
+      padding-right: 1rem;
+    }
+  }
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  span::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    border: 1px solid $dark;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 27%;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 0.5rem;
+    border-radius: 1px;
+    border-bottom: 3px solid $default;
+    border-right: 3px solid $default;
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+  input:checked {
+    ~ span {
+      color: $gray;
+      text-decoration: line-through;
+    }
+    ~ span::before {
+      border-color: transparent;
+      transform: translateY(-50%) scale(0);
+    }
+    ~ span::after {
+      opacity: 1;
+    }
+  }
+}
+// to do list container end
+.none {
+  display: none;
+}
+
+
+

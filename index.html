@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List API ver.</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="frontPage">
+        <div class="frontPage-content">
+          <div class="section-left">
+            <div class="title">
+              <div class="todo-icon">
+                <img class="checkbox-icon" src="./img/Vector.png" alt="" />
+                <img class="check-icon" src="./img/Vector-1.png" alt="" />
+              </div>
+              <h1>online to do list</h1>
+            </div>
+            <div class="cover">
+              <img src="./img/img.png" alt="cover-photo" />
+            </div>
+          </div>
+          <!-- 登入區塊 -->
+          <div class="section-login">
+            <h2>最實用的線上待辦事項服務</h2>
+            <div class="login-email">
+              <span>Email</span>
+              <input
+                type="text"
+                placeholder="請輸入Email"
+                class="login-email-value"
+              />
+            </div>
+            <div class="login-pwd">
+              <span>Password</span>
+              <form action="">
+              <input
+                type="password"
+                placeholder="請輸入密碼"
+                class="login-pwd-value"
+                autocomplete="off"
+              />
+            </div>
+        </form>
+            <div class="login-signup-btns">
+              <button class="login-btn">Log in</button>
+              <button class="signup-btn">Sign up</button>
+            </div>
+          </div>
+          <!-- 登入區塊結束 -->
+          <!-- 註冊區塊 -->
+          <div class="section-signup none">
+            <h2>Create an Account</h2>
+            <div class="signup-info">
+              <span>Email</span>
+              <input
+                type="text"
+                placeholder="請輸入您的 Email"
+                class="signup-email-value"
+              />
+              <span>您的暱稱</span>
+              <input
+                type="text"
+                placeholder="請輸入您的暱稱"
+                class="signup-nickname-value"
+              />
+              <span>您的密碼</span>
+              <form action="">
+              <input
+                type="password"
+                placeholder="請輸入您的密碼"
+                class="signup-pwd-value"
+                autocomplete="off"
+              />
+            </form>
+              <span>請再次輸入密碼</span>
+              <form action="">
+              <input
+                type="password"
+                placeholder="請再次輸入您的密碼"
+                class="signup-pwd-confirm-value"
+                autocomplete="off"
+              />
+            </form>
+              <div class="signup-signup-btns">
+                <button class="signup-signup-btn">Sign up</button>
+                <button class="signup-backToLogin-btn">Already have `an account?</button>
+              </div>
+            </div>
+          </div>
+          <!-- 註冊區塊結束 -->
+        </div>
+      </div>
+      <!-- to do list 頁面區塊 -->
+      <div class="todolist-page none">
+        <div class="todolist-header">
+          <div class="todolist-header-left">
+            <div class="todolist-icon">
+              <img
+                class="todolist-checkbox-icon"
+                src="./img/Vector.png"
+                alt=""
+              />
+              <img
+                class="todolist-check-icon"
+                src="./img/Vector-1.png"
+                alt=""
+              />
+            </div>
+            <h1>online to do list</h1>
+          </div>
+          <div class="todolist-header-right">
+            <p class="user-nickname">User's To DO LIST</p>
+            <button class="todolist-signout">Sign out</button>
+          </div>
+        </div>
+        <div class="todolist-container">
+          <div class="container">
+            <div class="card input">
+              <input
+                type="text"
+                placeholder="text your task!"
+                class="taskContent"
+              />
+              <a href="#" class="btn_add">+</a>
+            </div>
+            <div class="card card_list">
+              <ul class="tab">
+                <li class="active" data-tab="all">All</li>
+                <li data-tab="wip">WIP</li>
+                <li data-tab="finished">Finished</li>
+              </ul>
+              <div class="cart_content">
+                <ul class="list"></ul>
+                <div class="list_footer">
+                  <p>0 unfinished tasks</p>
+                  <a href="#">Clear all finished tasks</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- to do list 頁面區塊結束 -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="all.js"></script>
+    <style></style>
+  </body>
+</html>
