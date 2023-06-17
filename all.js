@@ -128,7 +128,7 @@ function getToDos() {
     .then((res) => {
       console.log(res.data.todos);
       taskData = res.data.todos;
-      updateList();
+      updateList(taskData);
     })
     .catch((error) => console.log(error.response));
 }
@@ -251,9 +251,9 @@ function toggleToDos(taskId) {
 // 畫面渲染 (和未完成待辦項目計算功能)
 const unFinishedTaskCounter = document.querySelector(".list_footer p");
 
-function updateList() {
+function updateList(data) {
   let str = "";
-  taskData.forEach((item, index) => {
+  data.forEach((item, index) => {
     str += `<li data-id=${item.id}>
           <label class="checkbox">
             <input type="checkbox" ${
@@ -282,11 +282,11 @@ function changeTab(e) {
   tabStatus = e.target.dataset.tab;
   const tabs = document.querySelectorAll(".tab li");
   tabs.forEach((item) => item.classList.remove("active"));
-  e.target.classList.add("active");``
+  e.target.classList.add("active");
   filterList();
 }
 
-function filterList() {
+function filterList() {``
   let filteredList = [];
   if (tabStatus == "all") {
     filteredList = taskData;
